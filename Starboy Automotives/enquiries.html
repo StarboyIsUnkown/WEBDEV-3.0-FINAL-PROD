@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starboy Automotives - Enquiries</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Starboy Automotives</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Custom Project & Parts Enquiry</h2>
+            <p>Looking for custom ECU tuning, bespoke parts sourcing, or engine build quotes? Complete this form for a detailed estimate from our engineers.</p>
+        </section>
+
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Client Details</legend>
+                    <p>
+                        <label for="client-name">Full Name:</label><br>
+                        <input type="text" id="client-name" name="client-name" required>
+                    </p>
+                    <p>
+                        <label for="client-phone">Phone Number:</label><br>
+                        <input type="tel" id="client-phone" name="client-phone" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vehicle & Customization Specs</legend>
+                    <p>
+                        <label for="car-details">Vehicle Year, Make & Model:</label><br>
+                        <input type="text" id="car-details" name="car-details" placeholder="e.g. 2022 Golf 8 R" required>
+                    </p>
+                    <p>
+                        <label for="enquiry-type">Enquiry Category:</label><br>
+                        <select id="enquiry-type" name="enquiry-type" required>
+                            <option value="">-- Select Category --</option>
+                            <option value="parts-order">Custom Part Import / Order</option>
+                            <option value="dyno-tuning">ECU Dyno Remap</option>
+                            <option value="engine-rebuild">Engine / Turbo Fabrication</option>
+                            <option value="other">General Technical Enquiry</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="spec-details">Project Goals / Requirements:</label><br>
+                        <textarea id="spec-details" name="spec-details" rows="6" placeholder="Detail your horsepower targets, timeline, or required parts..." required></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Enquiry Request</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Starboy Automotives. All rights reserved.</p>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>
